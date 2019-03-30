@@ -38,7 +38,7 @@ class OrderDetailsPage extends React.Component{
 
 const GetProducts = async (id) => {
   console.log("details")
-  await axios.get("http://localhost:6112/products/" + id).then((data) => {
+  await axios.get("https://emania-store-api.herokuapp.com//products/" + id).then((data) => {
     for (let index = 0; index < data.data.product.length; index++) {
       productsOrdered.push(
         <m.ListItem primary={data.data.product[index]}></m.ListItem>
