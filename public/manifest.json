@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Emania Store Admin Panel",
+  "name": "a Panel for Managing Emania Store IOS & Android App",
   "icons": [
     {
       "src": "favicon.ico",

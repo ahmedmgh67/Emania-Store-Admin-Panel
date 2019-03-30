@@ -1,0 +1,22 @@
+.form{
+  width: 1000;
+  margin: 20.0pt;
+  font-size: 20.0pt
+}
+
+.nptitle{
+  /*margin: 50.0pt;*/
+  margin-top: 200.0pt;
+}
+
+.forminput{
+  margin-right: 100.0pt
+}
+
+.newpr{
+  margin-left: 20.0pt;
+}
+
+#subnpbu{
+  margin-left: 20.0pt;
+}

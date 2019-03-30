@@ -12,3 +12,74 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.title{
+  background-color: blueviolet;
+  padding: 15pt;
+  margin: 2pt;
+  margin-bottom: 20pt;
+  border-radius: 10pt;
+  margin-left: -22pt;
+  margin-top: -0;
+  width: 1138pt;
+}
+.title-text{
+  text-align:  center;
+}
+.item{
+  float: top
+}
+.btn{
+  width:50.0pt
+}
+.btn-lg{
+  width:100.0pt
+}
+
+.link{
+  color: black;
+}
+
+
+.nav-item{
+  margin-left:60.0pt;
+}
+
+.titlename{
+  display: inline-block
+}
+
+.byu{
+  display: inline-block;
+}
+
+.fab{
+  position: sticky;
+  margin-left: 10.0
+
+}
+
+.item{
+  width: 2000.0pt;
+}
+/*.content{
+  text-align: center;
+  margin-left: 10.0pt;
+  padding-right: 50.0pt
+}
+.nav-linka{
+  margin-left:60.0pt;
+}
+.image{
+  padding-left: 20.0pt;
+  padding-top: 18.0pt;
+}
+.item{
+  color:black;
+  width: fit-content;
+  background-color: white;
+  margin-left: -20.0pt;
+  padding: 10.0pt;
+  border-radius:20.0pt
+  
+}*/
