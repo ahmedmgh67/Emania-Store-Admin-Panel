@@ -22,7 +22,7 @@ Style = {
 componentDidMount = async ()  =>  {
   console.log("getting products")
   if(products[0] == null)
-  await axios.get('https://emania-store-api.herokuapp.com//api/products').then((res) => {
+  await axios.get('https://emania-store-api.herokuapp.com/api/products').then((res) => {
     for (var i = 0; i < res.data.length + 1; i++){
       this.setState({
           name: [...this.state.name, res.data[i].name],

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Emania-Store-Admin-Panel/precache-manifest.60894d35f1a7993bb68ac1de8387f1f5.js"
+  "/Emania-Store-Admin-Panel/precache-manifest.6ac70e7f3d2840c8c5c66eac5edfe17a.js"
 );
 
 workbox.clientsClaim();

@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import * as m from '@material-ui/core';
 import axios from 'axios';
 
@@ -47,4 +47,4 @@ const GetProducts = async (id) => {
   })
 }
 
-export default OrderDetailsPage;
+export default OrderDetailsPage;*/

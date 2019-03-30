@@ -20,7 +20,7 @@ class OrderApp extends React.Component {
 
 componentDidMount = async ()  =>  {
   if(orders[0] == null)
-    await axios.get('https://emania-store-api.herokuapp.com//api/orders').then((res) => {
+    await axios.get('https://emania-store-api.herokuapp.com/api/orders').then((res) => {
       for (var i = 0; i < res.data.length; i++){
         this.setState({
             id: [...this.state.id, res.data[i].id],

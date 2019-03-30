@@ -18,10 +18,10 @@ export default function ProductItem  (props)  {
 //<m.Button style={{margin:10,}} variant="contained">Edit</m.Button>
 
 /*function Delete  (e,id) async {
-  console.log("https://emania-store-api.herokuapp.com//api/products/" + id)
-  await axios.delete("https://emania-store-api.herokuapp.com//api/products/" + id);
+  console.log("https://emania-store-api.herokuapp.com/api/products/" + id)
+  await axios.delete("https://emania-store-api.herokuapp.com/api/products/" + id);
 }*/
 
 const Delete = async (e,id) =>{
-  await axios.delete("https://emania-store-api.herokuapp.com//api/products/" + id);
+  await axios.delete("https://emania-store-api.herokuapp.com/api/products/" + id);
 }
