@@ -84,7 +84,7 @@ class NewProductPage extends React.Component {
 export default NewProductPage;
 
 function Submit (name, price, imageurl, desc){
-  axios.post("https://emania-store-api.herokuapp.com/api/products",{
+  axios.post("http://ec2-13-59-189-34.us-east-2.compute.amazonaws.com/api/products",{
     "name": name,
     "price": price,
     "images":[
