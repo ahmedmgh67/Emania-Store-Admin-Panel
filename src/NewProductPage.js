@@ -11,6 +11,7 @@ class NewProductPage extends React.Component {
     price: '',
     imageurl: '',
     desc: '',
+    category: ''
   };
 
   handleChange = name => event => {
@@ -53,7 +54,7 @@ class NewProductPage extends React.Component {
             className="forminput" 
             variant="outlined" 
             size="large"/>
-           <br/>
+          <br/>
           <m.TextField 
             value={this.state.desc}
             onChange={this.handleChange('desc')}
@@ -65,11 +66,20 @@ class NewProductPage extends React.Component {
             className="forminput" 
             variant="outlined" 
             size="large"/>
+          <m.TextField 
+            value={this.state.category}
+            onChange={this.handleChange('category')}
+            fullWidth
+            margin="normal" 
+            label="Category" 
+            className="forminput" 
+            variant="outlined" 
+            size="large"/>
         </div>
         <div id="subnpbu">
           <m.Button 
             id="subnpbu" 
-            onClick={Submit(this.state.name, this.state.price, this.state.imageurl,this.state.desc)} 
+            onClick={Submit(this.state.name, this.state.price, this.state.imageurl,this.state.desc, this.state.category)} 
             variant="contained"
             >Submit Product
           </m.Button>
@@ -83,14 +93,15 @@ class NewProductPage extends React.Component {
 
 export default NewProductPage;
 
-function Submit (name, price, imageurl, desc){
+function Submit (name, price, imageurl, desc, category){
   axios.post("http://ec2-13-59-189-34.us-east-2.compute.amazonaws.com/api/products",{
     "name": name,
     "price": price,
     "images":[
       imageurl
     ],
-    "desc": desc
+    "desc": desc,
+    "category": category
   }).then((data) => {
     
   })

@@ -9,19 +9,11 @@ export default function ProductItem  (props)  {
         <m.Avatar src={props.picture} alt="Product Photo"></m.Avatar>
       </m.ListItemAvatar>
       <m.ListItemText primary={props.name} secondary={"$  "+ props.price}></m.ListItemText>
-      <m.Button style={{margin:10,}} variant="contained">Edit</m.Button>
       <m.Button onClick={(e) => Delete(e,props.id)} variant="contained">Delete</m.Button>
     </m.ListItem>
   );
 }
 
-//<m.Button style={{margin:10,}} variant="contained">Edit</m.Button>
-
-/*function Delete  (e,id) async {
-  console.log("http://ec2-13-59-189-34.us-east-2.compute.amazonaws.com/api/products/" + id)
-  await axios.delete("http://ec2-13-59-189-34.us-east-2.compute.amazonaws.com/api/products/" + id);
-}*/
-
 const Delete = async (e,id) =>{
-  await axios.delete("http://ec2-13-59-189-34.us-east-2.compute.amazonaws.com/api/products/" + id);
+  await axios.delete("http://ec2-18-191-137-0.us-east-2.compute.amazonaws.com/api/products/" + id);
 }

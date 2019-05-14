@@ -16,6 +16,7 @@ export default function OrderItem (props) {
               Address: {props.address}<br/>
               Cost: $  {props.price}<br/> 
               Phone: {props.phone}<br/>
+              Payment Method: {props.payment}
               Products Ordered : 
               {props.products.map((item ,index) => (
                 <m.ListItem key={index} >

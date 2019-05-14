@@ -12,7 +12,8 @@ export default class ProductApp extends React.Component {
       this.state = {
           name: [],
           price: [],
-          picture: []
+          picture: [],
+          category: []
      };
 }
 Style = {
@@ -22,18 +23,20 @@ Style = {
 componentDidMount = async ()  =>  {
   console.log("getting products")
   if(products[0] == null)
-  await axios.get('http://ec2-13-59-189-34.us-east-2.compute.amazonaws.com/api/products').then((res) => {
-    for (var i = 0; i < res.data.length + 1; i++){
+  await axios.get('http://ec2-18-191-137-0.us-east-2.compute.amazonaws.com/api/products').then((res) => {
+    for (var i = 0; i < res.data.length - 1; i++){
       this.setState({
           name: [...this.state.name, res.data[i].name],
           price: [...this.state.price, res.data[i].price],
-          picture: [...this.state.picture, res.data[i].images[0]]
+          picture: [...this.state.picture, res.data[i].images[0]],
+          category: [...this.state.category, res.data[i].category[0]]
       });
     products.push(<ProductItem
       picture={this.state.picture[i]}
       name={this.state.name[i]}
       price={this.state.price[i]}
-      id={res.data[i].id}
+      category={this.state.category[i]}
+      id={res.data[i]._id}
     />)
     };
     

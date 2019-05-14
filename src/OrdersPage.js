@@ -15,19 +15,21 @@ class OrderApp extends React.Component {
       price: [],
       phone: [],
       products: [],
+      payment: []
     };
   }
 
 componentDidMount = async ()  =>  {
   if(orders[0] == null)
-    await axios.get('https://emania-store-api.herokuapp.com/api/orders').then((res) => {
+    await axios.get('http://ec2-18-191-137-0.us-east-2.compute.amazonaws.com/api/orders').then((res) => {
       for (var i = 0; i < res.data.length; i++){
         this.setState({
             id: [...this.state.id, res.data[i].id],
             address: [...this.state.address, res.data[i].address],
             price: [...this.state.price, res.data[i].price],
             phone: [...this.state.phone, res.data[i].phone],
-            products: [...this.state.id, res.data[i].product]
+            products: [...this.state.id, res.data[i].product],
+            payment: [...this.state.payment, res.data[i].payment]
         });
 
         orders.push(<div>
@@ -36,7 +38,8 @@ componentDidMount = async ()  =>  {
           address={this.state.address[i]}
           price={this.state.price[i]}
           products={this.state.products[i]}
-          phone={this.state.phone[i]}/>
+          phone={this.state.phone[i]}
+          payment={this.state.payment[i]}/>
         <br/>
         </div>);
         console.log("got orders")
