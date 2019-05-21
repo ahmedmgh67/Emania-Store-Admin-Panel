@@ -15,5 +15,5 @@ export default function ProductItem  (props)  {
 }
 
 const Delete = async (e,id) =>{
-  await axios.delete("http://ec2-18-191-137-0.us-east-2.compute.amazonaws.com/api/products/" + id);
+  await axios.delete("http://ec2-52-14-74-144.us-east-2.compute.amazonaws.com/api/products/" + id);
 }

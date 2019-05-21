@@ -23,7 +23,7 @@ Style = {
 componentDidMount = async ()  =>  {
   console.log("getting products")
   if(products[0] == null)
-  await axios.get('http://ec2-18-191-137-0.us-east-2.compute.amazonaws.com/api/products').then((res) => {
+  await axios.get('http://ec2-52-14-74-144.us-east-2.compute.amazonaws.com/api/products').then((res) => {
     for (var i = 0; i < res.data.length - 1; i++){
       this.setState({
           name: [...this.state.name, res.data[i].name],

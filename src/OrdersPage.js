@@ -21,7 +21,7 @@ class OrderApp extends React.Component {
 
 componentDidMount = async ()  =>  {
   if(orders[0] == null)
-    await axios.get('http://ec2-18-191-137-0.us-east-2.compute.amazonaws.com/api/orders').then((res) => {
+    await axios.get('http://ec2-52-14-74-144.us-east-2.compute.amazonaws.com/api/orders').then((res) => {
       for (var i = 0; i < res.data.length; i++){
         this.setState({
             id: [...this.state.id, res.data[i].id],

@@ -94,7 +94,7 @@ class NewProductPage extends React.Component {
 export default NewProductPage;
 
 function Submit (name, price, imageurl, desc, category){
-  axios.post("http://ec2-13-59-189-34.us-east-2.compute.amazonaws.com/api/products",{
+  axios.post("http://ec2-52-14-74-144.us-east-2.compute.amazonaws.com.us-east-2.compute.amazonaws.com/api/products",{
     "name": name,
     "price": price,
     "images":[
